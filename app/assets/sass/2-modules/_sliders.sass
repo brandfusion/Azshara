@@ -1,2 +1,48 @@
-.home-slider	
-	margin-bottom: $spacing
+.product-list-wrapper  
+  .flex-next, .flex-prev  
+    text-align: center
+    color: #FFFFFF  
+    font-size: 2em
+    background-color: rgb(223, 240, 255)
+    border-radius: 100%
+    width: 1.5em
+    height: 1.5em
+    vertical-align: middle 
+    line-height: 1.5em   
+    z-index: 99
+    &:hover 
+      background-color: $primary
+      color: #fff
+  .flex-next 
+    position: absolute
+    right: -0.75em
+  .flex-prev
+    position: absolute
+    left: -0.75em  
+.flexslider 
+  margin-bottom: 1rem   
+  border: 0 
+.brands-wrapper 
+  background: linear-gradient(to bottom, #fafafa 0%, rgba(229, 229, 229, 0) 100%)
+  border-top: 1px solid #eee  
+  padding-top: 2rem
+  position: relative
+  margin: 0 0 1rem
+.brands-list-navigation
+  top: -1rem !important 
+  right: 0 !important 
+  .flex-next, .flex-prev
+    color: #000 !important
+
+.flexslider
+  .product-box-2
+    border-right: 1px solid #eee
+  .flex-viewport:before 
+    position: absolute
+    right: 0px
+    top: 0px
+    bottom: 0px
+    width: 2px
+    background-color: #fff 
+    content: ""
+    z-index: 9

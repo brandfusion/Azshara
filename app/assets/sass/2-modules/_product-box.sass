@@ -1,7 +1,7 @@
 .product-box-2
   padding: 0 $spacing
   padding-bottom: 1em
-  margin-bottom: 1em
+  // margin-bottom: 1em
   // border: 1px solid #eee
   font-size: 1em
   font-weight: 400
@@ -22,6 +22,9 @@
     color: #aaa 
     text-decoration: line-through    
     font-size: 0.8em
+  .code 
+    font-size: 0.8em
+    font-weight: 700  
   span
     display: block
   a 
@@ -33,7 +36,7 @@
   .title    
     margin: 0.5em 0 0
     width: 100%
-    text-align: center
+    text-align: left
     // font-weight: 500
     +text-overflow
   .image 
@@ -52,6 +55,8 @@
     font-weight: 700
     font-size: 1.1em
     margin-top: 0em
+    &.b2b 
+      margin: 1em 0
   .action 
     display: block
     // float: right      
@@ -119,6 +124,38 @@
       background-position: left bottom
       &:before
         background-color: $blue
+  input.inputQuantity
+    max-width: 4em     
+    text-align: center
+    margin-right: 0.3em
+    margin-left: 0
+    &:hover, &:focus
+      border-color: #a9a9a9
+      box-shadow: inset 2px 2px 0px #e8e8e8  
+    &.modified
+      background-color: #C0FFD0 
+      color: #056534    
+      border: 1px solid #00BE5E
+      font-weight: 600
+      &:hover, &:focus 
+        box-shadow: inset 2px 2px 0px #B2E6CD
+        border-color: #00BE5E
+  .btn-home-add
+    display: block
+    background-color: #ffe700
+    line-height: 2em
+    margin: 0.2em auto 0
+    padding: 0 0.5em
+    border-radius: 0.5em
+    border: none
+    color: #000
+    text-transform: none
+    font-size: 1em
+    font-weight: 400
+    &:hover 
+      border: none 
+      box-shadow: none
+    // DELETE
 
 .tooltip-inner
   background-color: $primary
@@ -147,4 +184,9 @@
     right: 1em  
 .product-list  
   .item 
-    +make-sm-column(2,10)    
+    +make-sm-column(2,10) 
+    margin-bottom: 2em
+    border-right: 1px solid #eee
+    &:nth-child(5n)      
+      border-right: none   
+  
