@@ -1,0 +1,102 @@
+.header-top
+  line-height: 2
+  font-size: 0.9em
+  color: #aaa
+  // border-bottom: 1px solid #eee
+  // margin-bottom: 1rem
+  text-align: right
+  p 
+    margin-bottom: 0
+  ul 
+    +h-nav
+    float: right
+  li 
+    margin-left: 1em  
+  i 
+    margin-right: 0.5em
+.header-info 
+  text-align: right
+.minicart  
+  display: inline-block
+  span 
+    vertical-align: middle
+  i 
+    margin-right: 0
+    vertical-align: middle  
+  a 
+    display: inline-block
+    background-color: $secondary 
+    color: #000     
+    line-height: 2.5em
+    padding: 0 1em
+    width: 10rem 
+    text-align: center
+  .minicart-quantity
+    font-weight: 300
+    margin-right: 0.2em    
+    // vertical-align: middle
+.header-account 
+  display: inline-block 
+  background-color: $primary
+  // padding: 0 0.5em
+  color: #fff
+  line-height: 2.5em
+  // border-right: 1px solid #fff
+  margin-left: 1rem
+  i 
+    margin-right: 0.3em
+    vertical-align: middle
+    font-size: 1.5em
+  a 
+    color: inherit
+    // vertical-align: middle
+    padding: 0 1em
+.form-control:focus 
+  border-color: #000
+  outline: 0   
+  box-shadow: none 
+.header-search-v2 
+  text-align: right
+  padding-top: 1.5rem
+  padding-left: 0
+  float: right
+  form 
+    display: inline-block
+    float: left
+  .form-control
+    border: none
+    width: 25rem
+    display: inline-block
+    border-radius: 0px  
+    box-shadow: none;
+    line-height: 2em
+    height: 2.5em  
+    vertical-align: middle
+    background-color: #F5F5F5
+    padding: 0 0.5em
+    transition: all 0.3s ease-in-out
+    @media (max-width: 1199px)
+      width: 15rem
+    &:focus 
+      width: 27rem
+      @media (max-width: 1199px)
+        width: 17rem
+  button 
+    // line-height: 2.5em
+    height: 2.5em
+    background-color: #F5F5F5
+    // border: 1px solid $primary
+    color: #fff  
+    vertical-align: middle
+    padding: 0 1em
+    color: #000
+  input 
+    width: 20rem  
+#logo 
+  max-width: 265px
+  img
+    max-height: 5rem    
+    margin: 0 auto
+.header-middle 
+  margin-bottom: 2rem
+

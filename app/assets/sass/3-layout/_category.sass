@@ -1,0 +1,83 @@
+.filter-horizontal-2
+  background-color: #DFF0FF
+  padding-left: 0.5em
+  font-size: 0.9em
+  .item 
+    display: inline-block
+    margin-right: 0.5em
+    a 
+      font-weight: 700
+  .title
+    font-weight: 400  
+  label 
+    font-weight: 400  
+  p 
+    margin: 0 
+  a  
+    padding: 0.5em   
+    &:hover 
+      text-decoration: none 
+  .fa-angle-down 
+    margin-left: 1em
+    width: 1.5em
+    background-color: $primary
+    text-align: center
+    color: #FFFFFF
+  .dropdown-menu 
+    border-radius: 0
+    font-size: inherit  
+  .dropdown:hover    
+    .dropdown-menu 
+      border-color: #fff 
+      // background-color: $primary
+      box-shadow: 0px 0px 6px #C3C3C3
+    a
+      background-color: $primary
+      color: #fff
+    .fa-angle-down
+      background-color: #fff 
+      color: $primary  
+    ul 
+      a 
+        color: #000
+        background-color: inherit
+        &:hover 
+          // color: $primary
+          text-decoration: underline
+      .fa 
+        // background-color: $primary    
+        color: #000
+.sort-by
+  float: right
+  .sort-by-selected 
+    font-size: 0.8em
+    color: gray
+    font-style: italic
+
+.wide-container 
+  width: 95%        
+   
+.form-filters
+  display: inline-block
+
+.heading-category
+  vertical-align: middle
+  font-weight: 300
+  font-size: 2em
+  line-height: 1 
+  margin: 0 0 0.3em
+  font-family: "Open sans", sans-serif
+  i 
+    color: $primary
+    margin-right: 0.3em
+.pagination-info 
+  display: inline-block    
+.view-mode
+  display: inline-block
+  margin-left: 0.5em
+  color: #000
+  a 
+    color: inherit  
+    background-color: transparent
+    &:hover 
+      color: $primary

@@ -1,0 +1,150 @@
+.product-box-2
+  padding: 0 $spacing
+  padding-bottom: 1em
+  margin-bottom: 1em
+  // border: 1px solid #eee
+  font-size: 1em
+  font-weight: 400
+  &:hover
+    // box-shadow: 0px 0px 3px #eee
+    // border: 1px solid #ddd\
+    // transform-origin: 50% 50%
+    // transform: scale(1.)
+    // .product-item-button
+    //   opacity: 1
+  p
+    margin: 0px
+    display: inline-block
+    span 
+      display: inline-block
+  .old-price 
+    font-weight: 400
+    color: #aaa 
+    text-decoration: line-through    
+    font-size: 0.8em
+  span
+    display: block
+  a 
+    color: #000
+    display: block
+    &:hover 
+      text-decoration: none 
+      color: #000
+  .title    
+    margin: 0.5em 0 0
+    width: 100%
+    text-align: center
+    // font-weight: 500
+    +text-overflow
+  .image 
+    height: 10rem
+    display: flex 
+    align-items: center
+    overflow: hidden
+    img
+      height: auto
+      width: auto
+      margin: 0 auto 
+  .product-content 
+    display: block
+    text-align: center
+    color: #0063be
+    font-weight: 700
+    font-size: 1.1em
+    margin-top: 0em
+  .action 
+    display: block
+    // float: right      
+    background-color: $secondary
+    line-height: 2em
+    margin: 0.2em auto 0
+    padding: 0 0.5em
+    border-radius: 0.5em
+    i 
+      transition: all 0s linear 
+    .ion-android-cart:before 
+      vertical-align: middle
+      margin-right: 0.3em
+      transition: all 0s linear 
+      color: $primary
+      &:hover 
+        transition: all 0s linear 
+    &:hover 
+      background-color: #51CE00
+      color: #FFFFFF
+  .product-item-price
+    font-size: 1em
+    text-align: center
+    font-weight: 700
+    color: #00bed4
+    sup
+      font-size: 0.55em
+      font-weight: 400
+  .product-item-old-price
+    font-size: 0.8em
+    color: gray
+    text-decoration: line-through
+    text-align: center
+    sup
+      font-size: 0.55em
+      font-weight: 400
+  .product-item-button
+    +transition(ease-in,0.5s)
+    opacity: 0
+    width: 70%
+    background-color: #00bed4
+    color: #fff
+    text-align: center
+    line-height: 32px
+    position: absolute
+    bottom: 145px
+    left: 15%
+    text-transform: uppercase
+    font-size: 0.7em
+    +transition(all 0.5s ease-in)
+    // +background-image(linear-gradient(to right, $red 50%, $blue 50%))
+    background-size: 200% 100%
+    background-position: right bottom
+    &:before
+      font-family: "FontAwesome"
+      content: "\f002"
+      margin-right: 0.5em
+      background-color: $red
+      display: inline-block
+      float: left
+      padding: 0 1em
+      +transition(all 0.5s ease-in)
+      border-right: 1px solid #fff
+    &:hover
+      background-position: left bottom
+      &:before
+        background-color: $blue
+
+.tooltip-inner
+  background-color: $primary
+  border-radius: 0.5em
+  box-shadow: 0px 0px 10px 2px rgba(0, 99, 190, 0.34)
+  border: 1px solid #005CB1
+.tooltip-arrow 
+  border-top-color: $primary !important  
+.product-list-heading
+  font-size: 1rem
+  font-weight: 600
+  margin-bottom: 0.3em
+  color: $primary
+  text-transform: uppercase
+.product-list-wrapper
+  position: relative 
+.product-list-navigation
+  position: absolute
+  top: 0
+  right: 1em  
+  .product-list-wrapper &  
+    top: 50%
+    height: 0
+    margin-top: -1.5em
+    left: 1em
+    right: 1em  
+.product-list  
+  .item 
+    +make-sm-column(2,10)    

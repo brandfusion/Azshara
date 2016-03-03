@@ -1,0 +1,271 @@
+.main-nav-2
+  background-color: transparent
+  // padding-left: 15px
+  border-bottom: 2px solid $primary
+  font-size: 0.8rem
+  z-index: 2 
+  position: relative
+  .menu-links 
+    padding-left: 0
+  .nav 
+    position: relative
+  .nav > li
+    position: static
+  .nav li a   
+    // font-size: 0.8em
+    // padding: 0px
+    // background-color: transparent   
+    // font-weight: 600
+    // text-transform: uppercase
+    color: $primary
+    &:hover
+      background-color: transparent
+  li        
+    // border-right: 1px solid #eee
+    line-height: 2
+    position: relative
+    &:hover
+      background-color: $primary
+      color: #fff
+      a
+        color: #fff
+        background-color: $primary
+    &:last-child:hover a
+      background-color: transparent
+    &:last-child
+      border-right: 0px
+    &.dropdown a:after
+      font-family: "FontAwesome"
+      content: "\f107"  
+      margin-left: 0.5em
+    &.dropdown li a:after 
+      content: "" 
+  // .left-nav-box 
+  //   max-width: 260px
+  //   &:hover
+  //     .inner-navigation 
+  //       display: block       
+.main-nav-2
+  position: relative
+  @media (max-width: 767px)
+    display: none
+  .dropdown 
+    .dropdown-menu    
+      position: absolute
+      // border: 1px solid #000
+      border-radius: 0
+      margin: 0
+      box-shadow: none 
+      top: 100%
+      padding: 0
+      font-size: inherit
+      .main-nav &
+        background-color: $primary    
+        background-color: #0063BE 
+        border: none 
+      li       
+        display: block
+        border: none
+        .main-nav &
+          padding: 0 0.5em         
+        &:last-child 
+          a 
+            border: none  
+      a 
+        border: none     
+        display: block
+        font-weight: 400
+        text-transform: none
+        padding: 0.2em 0.5em
+        border-bottom: 1px solid #2B7CC7
+        &:hover 
+          background-color: inherit        
+        .main-nav &
+          border-bottom: 1px solid #427EB5
+          &:hover
+            text-decoration: underline
+      li:last-child
+        a 
+          border: none  
+      i 
+        margin-right: 0.3em      
+    &:hover 
+      .dropdown-menu 
+        display: block 
+        width: 12rem 
+  .menu3dmega
+    .inner-promo
+      a:hover
+        background-color: transparent
+    li
+      border-bottom: 1px solid #eee
+      position: relative   
+      .content
+        display: none
+        border: 1px solid #0063BE
+        overflow: hidden
+        padding: 15px
+        position: absolute
+        left: 100%
+        top: 0px
+        width: 800px
+        z-index: 100
+        background-color: #fff
+        border-left: 4px solid #0063BE
+        padding-right: 30px
+      .content.narrow
+        width: 562px
+    li:hover .content
+      display: block
+    .inner-content
+      max-width: 532px
+      img      
+        width: 103px
+        height: 104px
+        margin: 0 auto
+      a
+        display: block
+        color: #000
+        line-height: 20px
+        padding-left: 0px
+        font-size: 12px
+        font-weight: 400
+        background-color: #fff      
+        text-align: center
+        min-height: 145px
+        span 
+          text-align: left
+          display: block
+          min-height: 1px
+          line-height: 1.4
+          font-weight: 600       
+          margin-bottom: 0.5em
+          padding: 0.5em 0.5em 0
+          border-top: 1px solid $primary
+        &:hover
+          background-color: #fff
+          text-decoration: underline
+          color: #000
+    .inner-promo
+      img
+        border: 1px solid $red
+        height: 240px
+    a
+      display: block
+      color: #000
+      line-height: 32px
+      padding-left: 10px
+      font-size: 1em
+      font-weight: 600
+      background-color: #fff    
+      &:hover
+        color: #ffffff
+        background-color: #0063BE
+        text-decoration: none
+        .fa-angle-right
+          color: #fff
+          transform: translate(3px, 0px)
+    .fa-angle-right
+      // color: #2A3486
+      line-height: 32px
+      font-size: 12px
+      margin-right: 10px    
+      float: right
+    .menu-list
+      li 
+        border: none
+      .col-md-4      
+        padding-right: 0px
+      a 
+        line-height: 1
+        text-align: left
+        min-height: 1px
+        line-height: 2
+        font-weight: 400     
+        background-color: #EBF4FD
+        margin-bottom: 0.5em
+        padding: 0 0.5em
+        min-height: 1px
+        &:hover 
+          background-color: #0063BE
+          text-decoration: none 
+          color: #fff
+  .left-nav-box
+    box-shadow: 0px 0px 5px #ccc
+    position: relative
+    z-index: 2
+  .main-navigation 
+    margin-left: -$spacing
+    font-size: 0.8rem
+    +h-nav
+    ul.dropdown-menu  
+      li 
+        float: none
+        padding: 0
+  // margin-left: -$spacing  
+  .category-heading
+    box-shadow: 0px 0px 5px #ccc
+    position: relative
+    z-index: 2
+    &:after 
+      // height: 2px
+      // width: 100%
+      // background-color: $primary 
+      color: #fff;
+      position: absolute
+      right: 1em
+      top: 0.7em
+    p
+      // border-bottom: 1px solid #eee
+      font-weight: 600
+      padding: 0px
+      height: 2.7em
+      background-color: $primary
+      line-height: 2.7em
+      padding-left: 10px
+      width: 100%
+      display: inline-block
+      color: #fff
+      font-size: inherit
+      margin: 0px
+      text-transform: uppercase  
+    .fa 
+      float: right
+      line-height: 2.7em
+      padding-right: 1em  
+
+  .absolute-navigation
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%   
+    box-shadow: 0px 0px 5px #ccc
+    z-index: 2   
+    right: 0
+  .main-nav-l1-style  
+    font-weight: 600
+    font-size: inherit 
+    padding: 0 1em
+    text-transform: uppercase
+    // line-height: 2.6em 
+    color: #000
+    height: 34px
+    line-height: 34px
+    vertical-align: middle
+    &:hover 
+      text-decoration: none  
+  .inner-navigation
+    display: none    
+    position: relative
+.category-collapsed 
+  .category-heading:after
+    font-family: "FontAwesome"
+    content: "\f107"
+  .absolute-navigation
+    display: none 
+  &:hover 
+    .absolute-navigation
+      display: block    
+.category-expanded
+  .absolute-navigation  
+      display: block

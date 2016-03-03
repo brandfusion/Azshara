@@ -1,0 +1,140 @@
+.newsletter 
+  background-color: $lightblue
+  padding: 2rem 1rem
+  font-size: 1em
+  text-align: center
+  // border: 1px solid #eee  
+  @media (max-width: 767px)
+    font-size: 0.8em  
+  p 
+    font-weight: 700
+    margin-bottom: 0.5rem
+  input 
+    padding: 0.5rem 0 0
+    margin-bottom: 1.5rem
+    border-bottom: 1px solid #000
+    font-size: 0.8em
+    width: 20em
+    max-width: 100%
+    text-align: center
+    background-color: transparent
+    // +placeholder
+    //   color: #000
+    //   font-weight: 300
+    //   transition: all 0.3s ease-out
+    &:focus 
+      border-color: #000
+  button  
+    font-style: italic   
+    background-color: #000
+    color: #fff
+    padding: 0.5rem 1rem  
+    &:hover 
+      text-decoration: underline   
+.middle-banner-zone
+  // position: relative 
+  margin-top: 2rem 
+  .item 
+    margin-bottom: 2*$spacing
+    // +make-sm-column(4)
+    // +make-xs-column(6)
+    a 
+      display: block
+      img 
+        width: 100%
+  .item-newsletter
+    @media (max-width: 500px)
+      width: 100%    
+.lower-banner-zone 
+  .item 
+    margin-bottom: 2*$spacing
+    // +make-sm-column(6)
+    // +make-xs-column(12) 
+
+.slider 
+  margin-bottom: 2*$spacing   
+  padding-left: 0 
+.product-list-wrapper  
+  .flex-next, .flex-prev  
+    text-align: center
+    color: #FFFFFF  
+    font-size: 2em
+    background-color: rgb(223, 240, 255)
+    border-radius: 100%
+    width: 1.5em
+    height: 1.5em
+    vertical-align: middle 
+    line-height: 1.5em   
+    &:hover 
+      background-color: $primary
+      color: #fff
+  .flex-next 
+    position: absolute
+    right: -0.75em
+  .flex-prev
+    position: absolute
+    left: -0.75em  
+.flexslider 
+  margin-bottom: 1rem   
+  border: 0 
+.brands-wrapper 
+  background: linear-gradient(to bottom, #fafafa 0%, rgba(229, 229, 229, 0) 100%)
+  border-top: 1px solid #eee  
+  padding-top: 2rem
+  position: relative
+  margin: 0 0 1rem
+.brands-list-navigation
+  top: -1rem !important 
+  right: 0 !important 
+  .flex-next, .flex-prev
+    color: #000 !important
+.brands-list  
+  margin-bottom: 1rem
+  a 
+    display: block 
+    opacity: 0.5
+    height: 81px
+    &:hover 
+      opacity: 1
+  img 
+    margin: 0 auto  
+  .item  
+    a
+      display: flex
+      align-items: center 
+.banner-zone
+  margin-bottom: 1rem       
+.homepage-article-list-heading
+  font-size: 1rem
+  font-weight: 600
+  border-bottom: 1px solid #D8D8D8
+  margin-bottom: 0.5em
+  color: $primary
+  text-transform: uppercase
+  line-height: 2
+.homepage-article-list 
+  h4 
+    font-weight: 300
+    font-size: 1.5em 
+    margin-bottom: 0.5em
+  i 
+    margin-left: 0.5em  
+    color: $primary 
+  .ion-ios-arrow-forward:before  
+    vertical-align: middle
+  a 
+    color: $primary
+    &:hover 
+      text-decoration: underline  
+        
+.menu-heading
+  .ion-ios-list-outline:before 
+    content: "\f453"
+    font-size: 1.3em
+    vertical-align: middle
+    margin-right: 0.2em
+    color: white
+.product-list-carousel, .product-list-carousel-4 
+  padding: 0.5em
+  border: 1px solid #dff0ff
+  border-radius: 0.5rem

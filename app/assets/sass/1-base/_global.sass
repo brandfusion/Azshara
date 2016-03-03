@@ -1,0 +1,67 @@
+.container
+  +container-fixed
+  @media (min-width: $screen-sm-min)
+    width: $container-sm
+  @media (min-width: $screen-md-min)
+    width: $container-md
+  @media (min-width: $screen-lg-min)
+    width: $container-lg
+  position: relative  
+.row
+  +make-row
+.container-fluid
+  +container-fixed
+  position: relative 
+  width: 100%
+  max-width: 100%
+.container-full 
+  width: 100%
+  max-width: 100%
+  position: relative
+  padding: 0 $spacing
+  
++make-grid-columns
+
++make-grid(xs)
+
+@media (min-width: $screen-sm-min)
+  +make-grid(sm)
+
+@media (min-width: $screen-md-min)
+  +make-grid(md)
+
+@media (min-width: $screen-lg-min)
+  +make-grid(lg)  
+
+.block-header
+  font-weight: 300  
+  border-bottom: 4px double #333
+  margin-bottom: 0.5em  
+.aside
+  +make-sm-column(4)
+  +make-md-column(2)
+* 
+  transition: all 0.3s ease-out      
+
+input, select, textarea, button
+  &:hover 
+    box-shadow: none 
+    border-color: inherit  
+.tooltip 
+  transition: all 0s linear
+  transition: opacity 0.3s ease-out
+  .tooltip-inner 
+    width: 15em
+.dropdown:hover 
+  .dropdown-menu
+    display: block
+    border: none 
+    margin: 0    
+.btn-delete 
+  font-size: 0.9em
+  i 
+    margin-left: 0.3em
+    transition: all 0s linear
+  &:hover 
+    color: red
+    text-decoration: underline    
