@@ -159,8 +159,24 @@
   p:last-child span
     display: none
 .promotion-list
+  .heading
+    +make-xs-column(12)
+  +make-row
   .item
+    min-height: 400px
     margin: 2em 0
     padding-bottom: 2em
-    .media-object
-      width: 260px   
+    // .media-object
+    //   width: 260px
+  .image 
+    margin-bottom: 0.5em
+    a 
+      display: block 
+      width: 100%
+    img 
+      width: 100%
+  .summary
+    font-size: 1em
+  .title 
+    font-size: 1.4em      
+
