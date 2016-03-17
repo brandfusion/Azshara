@@ -1,6 +1,10 @@
 .control-label
   font-weight: 400
   vertical-align: middle
+  line-height: 2.5em
+  margin: 0
+  &.col-sm-3
+    padding-left: 0
 .form-control
   border-radius: 0
   outline: none 
@@ -10,28 +14,9 @@
   padding: 0 0.5em
   &.input-invalid 
     border-color: #FF6868
+.form-group 
+  +clearfix
+  margin-bottom: 1em      
 .popover  
   transition: all 0s linear
-#errors
-  margin: 0 15px  
-  font-weight: 600
-  color: #FFFFFF
-  border-radius: 0.3em  
-  .visible
-    padding: 0.5em
-    background-color: #FF7F00  
-  p:before 
-    font-family: "FontAwesome"
-    content: "\f071"
-    margin-right: 0.3em
-    font-weight: 400
-  p:last-child
-    margin: 0
-#login
-  max-width: 400px
-  label 
-    text-align: left
-    padding-left: 0
-  .reset-password
-    margin-left: 2em
-    text-decoration: underline      
+

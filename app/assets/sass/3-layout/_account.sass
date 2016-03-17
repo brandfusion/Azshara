@@ -5,20 +5,42 @@
   border-bottom: 1px solid #EEE
   line-height: 2
 .account-content 
-	margin-bottom: 1em  
+  margin-bottom: 1em  
 .login-social
-	a 
-		margin-right: 0.5em		
-	.fa 
-		margin-right: 0.3em
-	.fa-facebook-square
-		color: #3b589c
-	.fa-google-plus-square
-		color: #dd4b39	
+  a 
+    margin-right: 0.5em   
+  .fa 
+    margin-right: 0.3em
+  .fa-facebook-square
+    color: #3b589c
+  .fa-google-plus-square
+    color: #dd4b39  
 #account-creation 
-	a 
-		text-decoration: underline	
-	.login-social a 
-		text-decoration: none	
-		&:hover 
-			text-decoration: underline
+  a 
+    text-decoration: underline  
+  .login-social a 
+    text-decoration: none 
+    &:hover 
+      text-decoration: underline
+#login, #password-recovery
+  max-width: 400px
+  label    
+    padding-left: 0
+  .reset-password
+    margin-left: 2em
+    text-decoration: underline      
+#errors
+  margin: 0 15px  
+  font-weight: 600
+  color: #FFFFFF
+  border-radius: 0.3em  
+  .visible
+    padding: 0.5em
+    background-color: #FF7F00  
+  p:before 
+    font-family: "FontAwesome"
+    content: "\f071"
+    margin-right: 0.3em
+    font-weight: 400
+  p:last-child
+    margin: 0    
