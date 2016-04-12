@@ -1,3 +1,7 @@
+.no-flexbox
+  .product-box-2
+    .image 
+      display: block
 .product-box-2
   padding: 0 $spacing
   padding-bottom: 1em
@@ -41,13 +45,15 @@
     +text-overflow
   .image 
     height: 10rem
+    display: block
     display: flex 
     align-items: center
-    overflow: hidden
+    overflow: hidden    
     img
       height: auto
       width: auto
       margin: 0 auto 
+      width: 100%
   .product-content 
     display: block
     text-align: center

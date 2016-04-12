@@ -48,7 +48,10 @@
         // background-color: $primary    
         color: #000
 .sort-by
-  float: right
+  // float: right
+  border: 1px solid #eee
+  display: inline-block
+  margin-right: 1.5em
   .sort-by-selected 
     font-size: 0.8em
     color: gray
@@ -74,6 +77,7 @@
   display: inline-block    
 .view-mode
   display: inline-block
+  display: none
   margin-left: 0.5em
   color: #000
   a 
@@ -81,3 +85,5 @@
     background-color: transparent
     &:hover 
       color: $primary
+.sort-block
+  padding-top: 0
