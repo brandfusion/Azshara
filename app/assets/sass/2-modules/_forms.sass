@@ -2,7 +2,11 @@
   font-weight: 400
   vertical-align: middle
   line-height: 2.5em
+  height: 2.5em
   margin: 0
+  +phone 
+    line-height: 2em
+    height: 2em
   &.col-sm-3
     padding-left: 0
 .form-control
@@ -16,7 +20,11 @@
     border-color: #FF6868
 .form-group 
   +clearfix
-  margin-bottom: 1em      
+  margin-bottom: 1em     
+  .form-inline &
+    margin-right: 1em 
+    +phone 
+      margin-right: 0
 .popover  
   transition: all 0s linear
 
