@@ -1,15 +1,16 @@
-.breadcrumbs
-  padding: 0.5rem 0 0.2em
+.breadcrumbs  
   font-size: 0.9em
   font-weight: 400
-  padding-top: 0
-  border-bottom: 0
-  background-image: none
+  line-height: 2.5em
+  color: #000 
+  +phone
+    margin: 0 0 0.5em 0
+    padding: 0 0.5em
+    background: #eee
   ul
     +h-nav
   a
-    color: #000
-    line-height: 2.2em
+    color: inherit   
     &:hover
       color: $primary
   li

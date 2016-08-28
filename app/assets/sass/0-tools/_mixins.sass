@@ -15,7 +15,7 @@
     display: table-cell
     
 // =optional-at-root($sel) 
-//   @at-root #{if(not &, $sel, selector-append(&, $sel))} 
+//   @at-root if(not &, $sel, selector-append(&, $sel))} 
 //     @content
 // =placeholder
 //   +optional-at-root('::-webkit-input-placeholder')
@@ -38,4 +38,25 @@
   white-space: nowrap
 =flex-center-align
   display: flex 
-  align-items: center   
+  align-items: center 
+
+$smallphone-width: 340px  
+$phone-width: 768px
+$tablet-width: 992px
+$laptop-width: 1024px
+$desktop-width: 1200px    
+=tablet 
+  @media (min-width: $phone-width) and (max-width: $tablet-width - 1px) 
+    @content
+=laptop 
+  @media (min-width: $tablet-width) and (max-width: $laptop-width - 1px) 
+    @content
+=desktop 
+  @media (min-width: $laptop-width) and (max-width: $desktop-width - 1px) 
+    @content
+=phone 
+  @media (max-width: $phone-width - 1px) 
+    @content
+=smallphone 
+  @media (min-width: $smallphone-width) and (max-width: 400px) 
+    @content

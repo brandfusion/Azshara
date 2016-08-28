@@ -12,6 +12,7 @@
     transition: all 0s linear 
     display: none
 .btn-action
+  transition: all 0.3s ease-out
   outline: none 
   border: none 
   box-shadow: none
@@ -20,5 +21,51 @@
   padding: 0 1em
   border-radius: 0.3em
   color: #fff
+  font-size: 0.8rem
+  font-weight: 600
+  vertical-align: middle
   &:hover
-    background-color: $green
+    background-color: $yellow
+    color: #000
+.btn-comentariu
+  font-size: 0.9em
+  display: inline-block
+  &:before 
+    font-family: "FontAwesome"
+    content: "\f067"
+    margin-right: 0.3em
+  &:hover 
+    color: $primary
+    text-decoration: none
+.btn-order
+  background-color: $secondary
+  line-height: 2.5em
+  height: 2.5em
+  margin: 0
+  padding: 0 0.8em 0 3.8em 
+  border-radius: 0.8em 0.5em 0.5em 0.8em
+  font-size: 1em
+  font-weight: 400
+  border: none
+  position: relative
+  color: #000
+  span  
+    transition: all 0s linear
+    font-weight: 600
+    font-size: 0.9em
+  &:hover 
+    background-color: $primary
+    color: #fff
+  i 
+    background-color: $primary
+    font-size: 1.2em 
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    width: 2.4em
+    color: #fff
+    border-radius: 0.5em 0 0 0.5em
+    border-right: 0.1em solid #ffffff
+.btn-main
+  @extend .btn-action

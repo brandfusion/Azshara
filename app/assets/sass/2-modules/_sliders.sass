@@ -1,5 +1,8 @@
 .product-list-wrapper  
-  .flex-next, .flex-prev  
+  margin-bottom: 1em
+  transition: all 0.3s ease-out
+  opacity: 0
+  .slick-next, .slick-prev  
     text-align: center
     color: #FFFFFF  
     font-size: 2em
@@ -13,15 +16,12 @@
     &:hover 
       background-color: $primary
       color: #fff
-  .flex-next 
+  .slick-next 
     position: absolute
     right: -0.75em
-  .flex-prev
+  .slick-prev
     position: absolute
     left: -0.75em  
-.flexslider 
-  margin-bottom: 1rem   
-  border: 0 
 .brands-wrapper 
   background: linear-gradient(to bottom, #fafafa 0%, rgba(229, 229, 229, 0) 100%)
   border-top: 1px solid #eee  
@@ -31,18 +31,19 @@
 .brands-list-navigation
   top: -1rem !important 
   right: 0 !important 
-  .flex-next, .flex-prev
+  .slick-next, .slick-prev
     color: #000 !important
 
-.flexslider
-  .product-box-2
+.product-list-carousel, .product-list-carousel-4
+  .product-box
     border-right: 1px solid #eee
-  .flex-viewport:before 
-    position: absolute
-    right: 0px
-    top: 0px
-    bottom: 0px
-    width: 2px
-    background-color: #fff 
-    content: ""
-    z-index: 9
+ 
+  // .slick-viewport:before 
+  //   position: absolute
+  //   right: 0px
+  //   top: 0px
+  //   bottom: 0px
+  //   width: 2px
+  //   background-color: #fff 
+  //   content: ""
+  //   z-index: 9

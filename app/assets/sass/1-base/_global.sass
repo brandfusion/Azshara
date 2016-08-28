@@ -40,10 +40,14 @@
 .aside
   +make-sm-column(4)
   +make-md-column(2)
-* 
-  transition: all 0.3s ease-out      
-
+// * 
+//   transition: all 0.3s ease-out      
+.text-right
+  text-align: right 
+.text-left 
+  text-align: left  
 input, select, textarea, button
+  transition: all 0.3s ease-out
   &:hover 
     box-shadow: none 
     border-color: inherit  
@@ -67,4 +71,5 @@ input, select, textarea, button
     text-decoration: underline    
 .cart--footer    
   z-index: 100
-  
+.noPadding
+  padding: 0  

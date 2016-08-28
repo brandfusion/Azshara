@@ -1,21 +1,14 @@
 .no-flexbox
-  .product-box-2
+  .product-box
     .image 
       display: block
-.product-box-2
+.product-box
   padding: 0 $spacing
   padding-bottom: 1em
-  // margin-bottom: 1em
-  // border: 1px solid #eee
+  min-height: 300px
   font-size: 1em
-  font-weight: 400
-  &:hover
-    // box-shadow: 0px 0px 3px #eee
-    // border: 1px solid #ddd\
-    // transform-origin: 50% 50%
-    // transform: scale(1.)
-    // .product-item-button
-    //   opacity: 1
+  font-weight: 400 
+  position: relative 
   p
     margin: 0px
     display: inline-block
@@ -29,6 +22,7 @@
   .code 
     font-size: 0.8em
     font-weight: 700  
+    text-align: center
   span
     display: block
   a 
@@ -38,11 +32,13 @@
       text-decoration: none 
       color: #000
   .title    
-    margin: 0.5em 0 0
+    margin: 0.5em 0 0.5em
     width: 100%
-    text-align: left
-    // font-weight: 500
+    text-align: left   
+    height: 2.8em    
+    padding: 0 0.5em
     +text-overflow
+    white-space: normal
   .image 
     height: 10rem
     display: block
@@ -60,29 +56,47 @@
     color: #0063be
     font-weight: 700
     font-size: 1.1em
-    margin-top: 0em
+    margin: 0em
+    &.unavailable
+      font-size: 0.9em
+      font-weight: 300
+      margin: 0 0 0.5em 0
     &.b2b 
       margin: 1em 0
   .action 
-    display: block
-    // float: right      
-    background-color: $secondary
+    display: block 
+    background-color: $yellow     
     line-height: 2em
-    margin: 0.2em auto 0
-    padding: 0 0.5em
+    margin: 0.2em auto 0.5em   
     border-radius: 0.5em
-    i 
-      transition: all 0s linear 
-    .ion-android-cart:before 
-      vertical-align: middle
+    text-transform: none
+    font-size: 0.9em
+    font-weight: 400
+    padding: 0
+    position: relative
+    padding-left: 3em
+    padding-right: 1em
+    overflow: hidden    
+    .ion-android-cart   
+      transition: all 0s linear   
+      line-height: 2.2em
+      background-color: #0063be
+      display: inline-block
+      padding: 0 0.6em
+      color: #fff
+      margin: 0
       margin-right: 0.3em
-      transition: all 0s linear 
-      color: $primary
-      &:hover 
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      border-right: 1px solid #fff        
+      &:before:hover 
         transition: all 0s linear 
     &:hover 
       background-color: #51CE00
       color: #FFFFFF
+      background-color: $primary
   .product-item-price
     font-size: 1em
     text-align: center
@@ -131,10 +145,13 @@
       &:before
         background-color: $blue
   input.inputQuantity
-    max-width: 4em     
-    text-align: center
-    margin-right: 0.3em
-    margin-left: 0
+    border-radius: 6px
+    border: 1px solid $gray
+    max-width: 4em   
+    text-align: right  
+    text-align: center 
+    display: block
+    margin: 0 auto 0.2em auto
     &:hover, &:focus
       border-color: #a9a9a9
       box-shadow: inset 2px 2px 0px #e8e8e8  
@@ -146,6 +163,14 @@
       &:hover, &:focus 
         box-shadow: inset 2px 2px 0px #B2E6CD
         border-color: #00BE5E
+  .new 
+    background: url(../img/nou.png) no-repeat center center
+    background-size: cover
+    width: 40px
+    height: 40px
+    position: absolute
+    right: -5px
+    top: 0     
   .btn-home-add
     display: block
     background-color: #ffe700
@@ -186,8 +211,8 @@
     top: 50%
     height: 0
     margin-top: -1.5em
-    left: 1em
-    right: 1em  
+    left: 0em
+    right: 0em  
 .product-list  
   .item 
     +make-sm-column(2,10) 
@@ -196,3 +221,95 @@
     &:nth-child(5n)      
       border-right: none   
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .product-box-2 .action, .btn-checkout.action
+//   padding: 0 0.6em 0 0
+
+// .product-box-2 .action, .btn-checkout
+//   text-transform: none
+
+// .product-box-2 .action:hover
+//   background-color: #195995
+
+.btn-checkout
+  text-transform: none
+  &.action
+    padding: 0 0.6em 0 0
+    span 
+      display: inline-block
+      vertical-align: middle
+      line-height: 1.1
+      padding: 0
+      float: left
+      margin: 0.3em 0.3em 0 0
+    .ion-android-cart
+      margin-right: 0.5em
+      float: left  
+      &:before
+        color: #FFFFFF
+        background: #195995
+        padding: 0.5em 0.7em 0.4em
+        line-height: 1.2
+        float: left
+        border-radius: 5px 0 0 5px
+        border-right: 1px solid #fff
+  &:hover, &.action:hover
+    background-color: #195995
+
+// .product-box-2 .action
+//   .ion-android-cart, span
+//     display: inline-block
+//     vertical-align: middle
+//     line-height: 1.1
+//     padding: 0
+//     float: left
+//     margin: 0 0.3em 0 0
+
+// .btn-checkout.action span
+//   display: inline-block
+//   vertical-align: middle
+//   line-height: 1.1
+//   padding: 0
+//   float: left
+//   margin: 0 0.3em 0 0
+
+// .product-box-2 .action .ion-android-cart:before
+//   color: #FFFFFF
+//   background: #195995
+//   padding: 0.5em 0.7em 0.4em
+//   line-height: 1.2
+//   float: left
+//   border-radius: 5px 0 0 5px
+//   border-right: 1px solid #fff
+
+// .btn-checkout.action .ion-android-cart
+//   &:before
+//     color: #FFFFFF
+//     background: #195995
+//     padding: 0.5em 0.7em 0.4em
+//     line-height: 1.2
+//     float: left
+//     border-radius: 5px 0 0 5px
+//     border-right: 1px solid #fff
+//   margin-right: 0.5em
+//   float: left
+
+// .product-box-2 .action span, .btn-checkout.action span
+//   margin-top: 6px
