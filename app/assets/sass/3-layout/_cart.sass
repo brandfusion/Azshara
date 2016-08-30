@@ -1,6 +1,7 @@
 table#cart
   width: 100%
-  text-align: left 
+  text-align: left
+  margin-bottom: 1em 
   .image 
     width: 100px
   .media-body
@@ -80,20 +81,33 @@ table#cart
   button.btn-update
     background-color: transparent 
     color: $primary   
+  .description
+    a 
+      font-weight: 600
+      color: $primary
+  .product-code
+    font-size: 0.9em    
+.cart-summary
+  +clearfix
+  border-top: 2px solid #000000
+  background-color: $lightblue
+  padding: 0 0.5em
+  line-height: 2
+  font-weight: 600
+  margin-bottom: 1em
+  p 
+    margin-bottom: 0
+
+.cart-actions
+  .btn-fade
+    margin-left: 0.5em
+    
 
 
 
 
 
 
-
-.go-to-checkout-wrap
-  padding-top: 10px
-  .btn-finalize, table.table-products a.btn-finalize
-    margin-top: 0px
-
-table.table-products .go-to-checkout-wrap a.btn-finalize, .go-to-checkout-wrap .btn-edit
-  margin-top: 0px
 
 .checkout-address-view
   font-size: 0.9em
@@ -106,5 +120,26 @@ table.table-products .go-to-checkout-wrap a.btn-finalize, .go-to-checkout-wrap .
     font-weight: 600
     font-size: 0.9em
 
-.form-item, .form-header
+
+
+.gift-cards .control-label, .voucher .control-label
+  margin-right: 1em
+  font-size: 1.2em
+  font-weight: 300
+  min-width: 7em
+
+.gift-cards, .voucher
   margin-bottom: 0.5em
+.gift-cards
+  margin-bottom: 1em
+.gift-cards button.btn-main, .voucher button.btn-main
+  margin-left: 1em
+
+.giftCard
+  margin: 30px 0 0 0
+  table tr td
+    padding: 5px 10px
+
+.checkout-page .giftCard .total
+  border-bottom: 1px solid #fff
+  font-weight: 600

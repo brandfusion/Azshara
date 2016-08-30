@@ -1,57 +1,58 @@
-.filter-horizontal-2
-  background-color: #DFF0FF
-  padding-left: 0.5em
-  font-size: 0.9em
-  .item 
-    display: inline-block
-    margin-right: 0.5em
-    a 
-      font-weight: 700
-  .title
-    font-weight: 400  
-  label 
-    font-weight: 400  
-  p 
-    margin: 0 
-  a  
-    padding: 0.5em   
-    &:hover 
-      text-decoration: none 
-  .fa-angle-down 
-    margin-left: 1em
-    width: 1.5em
-    background-color: $primary
-    text-align: center
-    color: #FFFFFF
-  .dropdown-menu 
-    border-radius: 0
-    font-size: inherit  
-  .dropdown:hover    
-    .dropdown-menu 
-      border-color: #fff 
-      // background-color: $primary
-      box-shadow: 0px 0px 6px #C3C3C3
-    a
-      background-color: $primary
-      color: #fff
-    .fa-angle-down
-      background-color: #fff 
-      color: $primary  
-    ul 
-      a 
-        color: #000
-        background-color: inherit
-        &:hover 
-          // color: $primary
-          text-decoration: underline
-      .fa 
-        // background-color: $primary    
-        color: #000
+// .filter-horizontal-2
+//   background-color: #DFF0FF
+//   padding-left: 0.5em
+//   font-size: 0.9em
+//   .item 
+//     display: inline-block
+//     margin-right: 0.5em
+//     a 
+//       font-weight: 700
+//   .title
+//     font-weight: 400  
+//   label 
+//     font-weight: 400  
+//   p 
+//     margin: 0 
+//   a  
+//     padding: 0.5em   
+//     &:hover 
+//       text-decoration: none 
+//   .fa-angle-down 
+//     margin-left: 1em
+//     width: 1.5em
+//     background-color: $primary
+//     text-align: center
+//     color: #FFFFFF
+//   .dropdown-menu 
+//     border-radius: 0
+//     font-size: inherit  
+//   .dropdown:hover    
+//     .dropdown-menu 
+//       border-color: #fff 
+//       // background-color: $primary
+//       box-shadow: 0px 0px 6px #C3C3C3
+//     a
+//       background-color: $primary
+//       color: #fff
+//     .fa-angle-down
+//       background-color: #fff 
+//       color: $primary  
+//     ul 
+//       a 
+//         color: #000
+//         background-color: inherit
+//         &:hover 
+//           // color: $primary
+//           text-decoration: underline
+//       .fa 
+//         // background-color: $primary    
+//         color: #000
 .sort-by
   // float: right
   border: 1px solid #eee
   display: inline-block
   margin-right: 1.5em
+  max-width: 10em
   .sort-by-selected 
     font-size: 0.8em
     color: gray
@@ -61,7 +62,7 @@
   width: 95%        
    
 .form-filters
-  display: inline-block
+  display: block
 
 .heading-category
   vertical-align: middle
@@ -75,6 +76,50 @@
     margin-right: 0.3em
 .pagination-info 
   display: inline-block    
+.pagination
+  margin: 0
+  margin-left: 0.3em
+  list-style-type: none
+  padding-left: 0px
+  &:before
+    content: " "
+    display: table
+  &:after
+    content: " "
+    display: table
+    clear: both
+  li
+    float: left
+  a
+    width: 1.5em
+    padding: 0
+    text-align: center
+    line-height: 1.5
+    color: #000
+    text-decoration: none
+    -webkit-transition: all 0.3s ease-out
+    transition: all 0.3s ease-out
+    &:hover
+      text-decoration: none
+      background-color: #DBEBF9
+  .disabled a
+    color: #aaa
+    &:hover
+      background-color: transparent
+  .active.disabled a
+    background-color: #0063BE
+    border: none
+    color: #fff 
+
+.pagination a
+  width: 1.5em !important
+  padding: 0 !important
+  text-align: center !important
+  line-height: 1.5 !important  
+  text-decoration: none  !important
+  transition: all 0.3s ease-out
+  border-radius: 0 !important
+
 .view-mode
   display: inline-block
   display: none
@@ -96,5 +141,60 @@
   position: absolute
   right: -5px
   top: 0
-  
-    
+.filter-wrapper
+  // padding: 1em 2em
+  // border: 1px solid #eee
+  // background-color: #f3f3f3
+  margin-bottom: 1em
+  // h4
+  //   border-bottom: 1px solid #053a6b
+  //   line-height: 2
+  //   font-weight: 400
+  //   margin-bottom: 0.5em  
+.filter-content
+  font-size: 0.9em 
+  border-left: 1px solid #eee
+  padding: 0 0.5em
+  li:last-child
+    label 
+      margin-bottom: 0
+.filter-vertical
+  padding: 0 0 0.5em
+  margin: 0
+  label
+    font-weight: normal
+    color: black
+  #price-filter input[type="text"]
+    padding-left: 5px
+    border: 1px solid #ddd
+  h3
+    font-size: 12px
+    font-weight: 400
+    margin: 0px 0px 5px
+    padding: 10px 0 0 0 !important
+    color: black !important
+  .vertical-filters-control
+    margin-top: 15px
+  .box-heading
+    font-size: 12px
+    line-height: 30px
+    font-weight: 600
+.filter-products
+  font-weight: 600
+  line-height: 2
+  margin-bottom: 0
+  border-bottom: 1px solid #eee
+  .fa-filter    
+    color: $primary
+    float: right
+    margin-top: 0.5em
+
+
+.badge
+  background-color: #DBEBF9
+  border-radius: 5px
+  color: #000
+  font-size: 0.7em
+  width: 1.5em
+  display: inline-block
+  text-align: center     
